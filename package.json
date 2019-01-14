@@ -1,0 +1,32 @@
+{
+  "name": "create-js-project",
+  "version": "1.0.0",
+  "description": "Set up a JavaScript project by running one command.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/create-js-project.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chalarangelo/create-js-project.git"
+  },
+  "keywords": [
+    "javascript",
+    "project",
+    "builder"
+  ],
+  "author": "Angelos Chalaris (chalarangelo@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chalarangelo/create-js-project/issues"
+  },
+  "homepage": "https://github.com/Chalarangelo/create-js-project#readme",
+  "dependencies": {
+    "inquirer": "^6.2.1",
+    "minimist": "^1.2.0"
+  },
+  "bin": {
+    "create-js-project": "./bin/create-js-project.js"
+  },
+  "preferGlobal": true
+}
