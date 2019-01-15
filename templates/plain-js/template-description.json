@@ -1,0 +1,8 @@
+{
+  "name": "JavaScript",
+  "modules": [
+    "ESLint",
+    "Jest"
+  ],
+  "category": "js"
+}

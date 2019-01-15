@@ -1,0 +1,9 @@
+{
+  "name": "ES6+",
+  "modules": [
+    "Babel",
+    "ESLint",
+    "Jest"
+  ],
+  "category": "js"
+}
