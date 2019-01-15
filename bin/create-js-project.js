@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-const SEPARATOR_STRING = '──────────────────────────────────────────';
-
 const fs = require('fs');
 const inquirer = require('inquirer');
 const { readTemplates } = require('../lib/templates.js');
@@ -11,7 +9,7 @@ const { buildPackage } = require('../lib/buildPackage');
 const argv = require('minimist')(process.argv.slice(2));
 const templatesData = readTemplates(__dirname);
 const templates = {
-  values: group(templatesData, v => v.category).reduce((acc, v) => [...acc, new inquirer.Separator(SEPARATOR_STRING), ...v])
+  values: group(templatesData, v => v.category).reduce((acc, v) => [...acc, new inquirer.Separator(), ...v])
 };
 templates.default = templates.values.findIndex(v => v.default);
 console.log(templates);
