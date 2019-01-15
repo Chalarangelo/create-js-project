@@ -1,9 +1,12 @@
 {
   "name": "ES6+",
-  "modules": [
+  "dependencies": [
     "Babel",
     "ESLint",
     "Jest"
+  ],
+  "devDependencies": [
+
   ],
   "category": "js"
 }

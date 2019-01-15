@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
+const fs = require('fs-extra');
 const inquirer = require('inquirer');
-const { readTemplates } = require('../lib/templates.js');
+const { readTemplates, buildFromTemplate } = require('../lib/templates.js');
 const { group } = require('../lib/util.js');
 const { buildPackage } = require('../lib/buildPackage');
 
@@ -12,7 +12,6 @@ const templates = {
   values: group(templatesData, v => v.category).reduce((acc, v) => [...acc, new inquirer.Separator(), ...v])
 };
 templates.default = templates.values.findIndex(v => v.default);
-console.log(templates);
 
 const questionOptions = {
   params: argv,
@@ -23,8 +22,6 @@ const questionOptions = {
 const questions = require('../lib/questions')(questionOptions);
 
 inquirer.prompt(questions).then(answers => {
-  console.log(JSON.stringify(answers, null, 2));
-
   if (answers.overwriteDir !== undefined && !answers.overwriteDir) {
     console.log('Please try again with a different name!');
     process.exit(0);
@@ -35,4 +32,5 @@ inquirer.prompt(questions).then(answers => {
     process.chdir(`./${answers.projectName}`);
 
   fs.writeFileSync('package.json', buildPackage(answers));
+  buildFromTemplate(__dirname, process.cwd(), templates.values.find(v => v.value === answers.projectTemplate));
 });

@@ -1,8 +1,11 @@
 {
   "name": "JavaScript",
-  "modules": [
-    "ESLint",
-    "Jest"
+  "dependencies": [
+    "eslint",
+    "jest"
+  ],
+  "devDependencies": [
+    "rollup"
   ],
   "category": "js",
   "default": true
