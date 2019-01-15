@@ -4,5 +4,6 @@
     "ESLint",
     "Jest"
   ],
-  "category": "js"
+  "category": "js",
+  "default": true
 }
