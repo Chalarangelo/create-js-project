@@ -1,5 +1,6 @@
 {
   "name": "ES6+",
+  "category": "js",
   "dependencies": [
     "Babel",
     "ESLint",
@@ -8,5 +9,8 @@
   "devDependencies": [
 
   ],
-  "category": "js"
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  }
 }

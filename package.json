@@ -4,7 +4,9 @@
   "description": "Set up a JavaScript project by running one command.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/create-js-project.js"
+    "start": "node ./bin/create-js-project.js",
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js",
+    "lint-fix": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
   },
   "repository": {
     "type": "git",
@@ -29,5 +31,10 @@
   "bin": {
     "create-js-project": "./bin/create-js-project.js"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
 }

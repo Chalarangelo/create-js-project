@@ -1,0 +1,20 @@
+{
+  "name": "JavaScript",
+  "category": "js",
+  "default": true,
+  "dependencies": [
+  ],
+  "devDependencies": [
+    "rollup",
+    "jest",
+    "eslint",
+    "eslint-config-airbnb-base",
+    "eslint-plugin-import"
+  ],
+  "main" : "index.js",
+  "scripts" : {
+    "start": "node ./index.js",
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js",
+    "lint-fix": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
+  }
+}

@@ -1,5 +1,6 @@
 {
   "name": "React",
+  "category": "react",
   "dependencies": [
     "React",
     "Babel",
@@ -9,5 +10,8 @@
   "devDependencies": [
 
   ],
-  "category": "react"
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  }
 }
