@@ -1,3 +1,16 @@
 {
-    "extends": "airbnb-base"
+  "extends": "airbnb-base",
+  "rules": {
+    "import/no-unresolved": [
+      "off",
+      {
+        "devDependencies": true
+      }
+    ],
+    "no-undef": "off",
+    "no-console": "off"
+  },
+  "env": {
+    "jest": true
+  }
 }
