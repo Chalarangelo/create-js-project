@@ -5,16 +5,26 @@
   "dependencies": [
   ],
   "devDependencies": [
+    "nodemon",
     "rollup",
+    "rollup-plugin-commonjs",
+    "rollup-plugin-terser",
     "jest",
     "eslint",
     "eslint-config-airbnb-base",
-    "eslint-plugin-import"
+    "eslint-plugin-import",
+    "npm-run-all"
   ],
-  "main" : "index.js",
+  "main" : "./dist/index.js",
   "scripts" : {
-    "start": "node ./index.js",
+    "dev-rebuild": "node ./scripts/build.js --watch",
+    "dev-restart": "node ./node_modules/nodemon/bin/nodemon --watch ./dist/ ./dist/index.js",
+    "start": "node ./node_modules/npm-run-all/bin/npm-run-all -p -r dev-rebuild dev-restart",
+    "build": "node ./scripts/build.js",
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js",
     "lint-fix": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
-  }
+  },
+  "postInstall": [
+    "npm run build"
+  ]
 }

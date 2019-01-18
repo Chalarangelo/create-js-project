@@ -32,5 +32,5 @@ inquirer.prompt(questions).then((answers) => {
   process.chdir(`./${answers.projectName}`);
 
   const selectedTemplate = templates.values.find(v => v.value === answers.projectTemplate);
-  buildFromTemplate(__dirname, process.cwd(), selectedTemplate);
+  buildFromTemplate(__dirname, process.cwd(), selectedTemplate, answers.projectName);
 });
