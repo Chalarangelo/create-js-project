@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>A React app</h1>
-        <p>Edit <code>src/App.js</code> and save to reload.</p>
+        <p>Edit <code>src/App.js</code>, save and reload.</p>
       </div>
     );
   }
