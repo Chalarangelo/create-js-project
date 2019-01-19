@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Chalarangelo/create-js-project#readme",
   "dependencies": {
+    "chalk": "^2.4.2",
     "fs-extra": "^7.0.1",
     "inquirer": "^6.2.1",
     "minimist": "^1.2.0"

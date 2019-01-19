@@ -1,0 +1,23 @@
+{
+  "name": "sda",
+  "version": "1.0.0",
+  "description": "A JavaScript project",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev-rebuild": "node ./scripts/build.js --watch",
+    "dev-restart": "node ./node_modules/nodemon/bin/nodemon --watch ./dist/ ./dist/index.js",
+    "dev": "node ./node_modules/npm-run-all/bin/npm-run-all -p -r dev-rebuild dev-restart",
+    "build": "node ./scripts/build.js",
+    "start": "node ./dist/index.js",
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js",
+    "lint-fix": "node ./node_modules/eslint/bin/eslint . --ext .js --fix",
+    "test": "node ./node_modules/jest/bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
