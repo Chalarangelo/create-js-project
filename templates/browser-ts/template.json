@@ -11,7 +11,7 @@
   "scripts": {
     "start": "node ./node_modules/parcel-bundler/bin/cli serve ./src/index.html --port 8080",
     "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.html --out-dir ./dist/",
-    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .ts,.js --fix"
   },
   "eslintrc": {
     "extends": "airbnb-base",
@@ -20,7 +20,6 @@
       "es6": true,
       "worker": true
     },
-    "parser"
     "parserOptions": {
       "ecmaVersion": 10,
       "sourceType": "script"
