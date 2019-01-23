@@ -1,5 +1,5 @@
 {
-  "name": "Node.js",
+  "name": "Node.js Fullstack",
   "category": "node",
   "devDependencies": [
     "parcel-bundler",
@@ -11,9 +11,10 @@
   ],
   "main": "./dist/index.js",
   "scripts": {
-    "dev:watch": "node ./node_modules/parcel-bundler/bin/cli watch ./src/index.js --target node --out-dir ./dist/",
+    "dev:watch-backend": "node ./node_modules/parcel-bundler/bin/cli watch ./src/index.js --target node --out-dir ./dist/",
+    "dev:watch-frontend": "node ./node_modules/parcel-bundler/bin/cli watch ./src/public/index.html --out-dir ./dist/public/",
     "dev:hot-reload": "node ./node_modules/nodemon/bin/nodemon --watch ./dist/ ./dist/index.js",
-    "start": "node ./node_modules/npm-run-all/bin/npm-run-all -p -r dev:watch dev:hot-reload",
+    "start": "node ./node_modules/npm-run-all/bin/npm-run-all -p -r dev:watch-backend dev:watch-frontend dev:hot-reload",
     "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.js --target node --out-dir ./dist/",
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
   },
