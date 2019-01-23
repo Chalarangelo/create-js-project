@@ -1,0 +1,42 @@
+{
+  "name": "Express Fullstack",
+  "category": "node",
+  "dependencies": [
+    "express"
+  ],
+  "devDependencies": [
+    "parcel-bundler",
+    "eslint",
+    "eslint-config-airbnb-base",
+    "eslint-plugin-import",
+    "nodemon",
+    "npm-run-all"
+  ],
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev:watch-backend": "node ./node_modules/parcel-bundler/bin/cli watch ./src/index.js --target node --out-dir ./dist/",
+    "dev:watch-frontend": "node ./node_modules/parcel-bundler/bin/cli watch ./src/public/index.html --out-dir ./dist/public/",
+    "dev:hot-reload": "node ./node_modules/nodemon/bin/nodemon --watch ./dist/ ./dist/index.js",
+    "start": "node ./node_modules/npm-run-all/bin/npm-run-all -p -r dev:watch-backend dev:watch-frontend dev:hot-reload",
+    "build": "node ./node_modules/parcel-bundler/bin/cli build ./src/index.js --target node --out-dir ./dist/",
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
+  },
+  "eslintrc": {
+    "extends": "airbnb-base",
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 10,
+      "sourceType": "module"
+    }
+  },
+  "eslintignore": [
+    "/dist",
+    "/node_modules"
+  ],
+  "postInstall": [
+    "npm run build"
+  ]
+}
