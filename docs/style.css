@@ -2,6 +2,41 @@
   ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css 
 */
 
+
+header {
+  background: #1c2529;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.header-logo {
+  margin: 7px;
+  margin-left: 5%;
+  border-radius: 10%;
+}
+
+.logo-title {
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 600;
+  vertical-align: top;
+  line-height: 50px;
+  padding-left: 3px;
+}
+
+@media only screen and (max-width: 360px) {
+  .logo-title {
+    font-size: 1rem;
+  }
+  .github-link {
+    display: none;
+  }
+}
+
 html {
   line-height: 1.2; 
   -webkit-text-size-adjust: 100%; 
@@ -119,20 +154,36 @@ progress {
 
 
 .docs {
-  padding: 10px;
+  margin-top: 50px;
+}
+
+.docs .splash {
+  height: 66vh;
+  width: 100%;
+  background: #232e33;
+  text-align: center;
+  color: #fff;
+}
+
+.docs .splash .logo-splash {
+  margin-top: 10vh;
+  border-radius: 100%;
 }
 
 h1 {
-  text-align: center;
-  border-bottom: 1px solid #dfdfdf;
-  padding: 4px 4px 20px 4px;
+  padding: 20vh 4px 20px 4px;
   font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: .5px;
 }
 
 h1 small {
-  margin-top: 10px;
+  margin-top: 14px;
   display: block;
   font-weight: 500;
+  font-size: 65%;
+  letter-spacing: 0px;
+  word-spacing: 1px;
 }
 
 pre {
@@ -142,3 +193,26 @@ pre {
   margin: 4px 0;
   border-radius: 4px;
 }
+
+.get-started-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  transition: .3s ease all;
+  padding: 8px 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.get-started-link:hover, .get-started-link:active, .get-started-link:focus {
+  background: #20292e;
+}
+
+.github-link {
+  position: fixed;
+  top: 13px;
+  right: 5%;
+}
+
