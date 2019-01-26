@@ -39,21 +39,6 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
 button, input, optgroup, select, textarea {
   font-family: inherit; 
   font-size: 100%; 
@@ -76,40 +61,6 @@ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-mo
 
 button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-legend {
-  padding: 0;
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px; 
-}
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; 
-  font: inherit; 
-}
-
-[hidden] {
-  display: none;
 }
 
 /* ========================================== */
@@ -288,6 +239,7 @@ h2 small {
   font-size: 0.95rem;
   max-width: 590px;
   box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12),0 1px 5px 0 rgba(0,0,0,.2);
 }
 
 ol, ul {
