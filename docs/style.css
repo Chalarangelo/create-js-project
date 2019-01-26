@@ -15,18 +15,13 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 hr {
   box-sizing: content-box; 
   height: 0; 
   overflow: visible; 
 }
 
-pre {
+pre, pre * {
   font-family: monospace, monospace; 
   font-size: 1em; 
 }
@@ -37,7 +32,7 @@ b, strong {
 
 code, kbd, samp {
   font-family: monospace, monospace; 
-  font-size: 1em;
+  font-size: 0.95em;
 }
 
 small {
@@ -186,6 +181,7 @@ header {
 }
 
 h1 {
+  margin: 0.67em 0;
   padding: 20vh 4px 20px 4px;
   font-weight: 600;
   font-size: 2rem;
@@ -201,12 +197,16 @@ h1 small {
   word-spacing: 1px;
 }
 
-pre {
-  background: #eee;
-  display: inline-block;
-  padding: 6px;
-  margin: 4px 0;
-  border-radius: 4px;
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+h2 small {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 80%;
+  padding-left: 12px;
 }
 
 .get-started-link {
@@ -247,6 +247,84 @@ pre {
   line-height: 1.5;
 }
 
+.get-started {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 10% 30px 10%;
+  background: #F5F5F5;
+}
+
+.get-started > div:first-child {
+  flex-grow: 1;
+  width: 66%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.get-started > div:last-child {
+  flex-grow: 1;
+  width: 33%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started > div:last-child > svg {
+  background: #2962FF;
+  padding: 16px;
+  border-radius: 100%;
+}
+
+.two-pres > pre {
+  background: #263238;
+  display: block;
+  margin: 8px 0;
+  padding: 14px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.95rem;
+  max-width: 590px;
+  box-sizing: border-box;
+}
+
+ol {
+  padding: 0 20px;
+}
+
+li > .two-pres {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.green {
+  color: #43A047;
+}
+
+.yellow {
+  color: #FFF59D;
+}
+
+footer {
+  color: #E0E0E0;
+  background: #1c2529;
+  margin-top: 0;
+  padding: 20px 10%;
+  word-spacing: 1px;
+}
+
+footer p {
+  padding: 4px 20px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+footer a, footer a:link, footer a:visited {
+  text-decoration: none;
+  color: #1556d6;
+}
+
 @media only screen and (max-width: 768px) {
   .three-col {
     padding: 60px 0 30px 0;
@@ -255,5 +333,18 @@ pre {
     width: 100%;
     padding: 10px 20px;
   }
+  .get-started {
+    padding: 10px 0 10px 0;
+  }
+  .get-started > div:first-child {
+    width: 100%;
+  }
+  .get-started > div:last-child{
+    width: 100%;
+    order: -1;
+    padding-bottom: 0;
+  }
+  footer {
+    padding: 10px 0 10px 0;
+  }
 }
-

@@ -13,57 +13,70 @@
     <span class="logo-title">Create JavaScript Project</span>
     <a href="https://github.com/Chalarangelo/create-js-project" target="_blank" rel="noopener noreferrer" class="github-link">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff"
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
-        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-      </svg>
-    </a>
-  </header>
-  <main class="docs">
-    <div class="splash">
-      <h1>Create JavaScript Project
-        <small>Set up a JavaScript project by running one command.</small>
-      </h1>
-      <a href="#getting_started" class="get-started-link">Get started</a>
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+    </svg>
+  </a>
+</header>
+<main class="docs">
+  <div class="splash">
+    <h1>Create JavaScript Project
+      <small>Set up a JavaScript project by running one command.</small>
+    </h1>
+    <a href="#getting_started" class="get-started-link">Get started</a>
+  </div>
+  <div class="three-col">
+    <div>
+      <h3>Focus on your Code</h3>
+      <p>You don't have to worry about build tools and configurations. All new projects come with build tools configured, instant reloading for development and build optimizations for production out of the box, so you can focus on your code.</p>
     </div>
-    <div class="three-col">
-      <div>
-        <h3>Focus on your Code</h3>
-        <p>You don't have to worry about build tools and configurations. All new projects come with build tools configured, instant reloading for development and build optimizations for production out of the box, so you can focus on your code.</p>
-      </div>
-      <div>
-        <h3>Configurable</h3>
-        <p>You can tweak your project's configuration anytime you want. Everything is set up just like you would set it up yourself, so you can change the configuration of the build tools, remove some of them or add new ones whenever you need.</p>
-      </div>
-      <div>
-        <h3>Latest Tools</h3>
-        <p>Your projects are powered by the latest versions of popular tools. When you start a new project, the latest versions of the appropriate dependencies are installed and configured and you can update them as your project keeps growing. </p>
-      </div>
+    <div>
+      <h3>Configurable</h3>
+      <p>You can tweak your project's configuration anytime you want. Everything is set up just like you would set it up yourself, so you can change the configuration of the build tools, remove some of them or add new ones whenever you need.</p>
     </div>
-    <p><strong>This build tool is currently under development. If you want to follow it and/or contribute, plase visit the project's <a href="https://github.com/Chalarangelo/create-js-project" target="_blank" rel="noopener noreferrer">GitHub repository</a>. </strong></p>
-    <p>If you are one of the brave few who feel like experimenting with this tool, here's how to install and run it:</p>
-    <ol>
-      <li>
-        <p>Install via npm:</p>
-        <pre>npm i -g create-js-project</pre>
-        <p>(OR) Install via yarn:</p>
-        <pre>yarn global add create-js-project</pre>
-      </li>
-      <li>
-        <p>Create a project, optionally providing a [project-name] for your project:</p>
-        <pre>create-js-project [project-name]</pre>
-        <p>(OR) Create a project via the npm initializer:</p>
-        <pre>npm init js-project [project-name]</pre>
-      </li>
-      <li>
-        <p>Answer the questions, such as your project's name and desired template.</p>
-      </li>
-      <li>
-        <p>Wait until the installation is complete.</p>
-      </li>
-      <li>
-        <p>Start developing!</p>
-      </li>
-    </ol>
-  </main>
+    <div>
+      <h3>Latest Tools</h3>
+      <p>Your projects are powered by the latest versions of popular tools. When you start a new project, the latest versions of the appropriate dependencies are installed and configured and you can update them as your project keeps growing. </p>
+    </div>
+  </div>
+  <div id="getting_started" class="get-started">
+    <div>
+      <h2>Get started
+        <small>It's as easy as 1, 2, 3!</small>
+      </h2>
+      <p>Before you start, you need to globally install <code>create-js-project</code> via npm or yarn:</p>
+      <div class="two-pres">
+        <pre><span class="green">npm</span> i -g <span class="yellow">create-js-project</span></pre>
+        <pre><span class="green">yarn</span> global add <span class="yellow">create-js-project</span></pre>
+      </div>
+      <p>Then, follow these 3 simple steps:</p>
+      <ol>
+        <li>
+          <p>Create a project, optionally providing a <code>[project-name]</code> for your project: </p>
+          <div class="two-pres">
+            <pre><span class="yellow">create-js-project</span> <em>[project-name]</em></pre>
+            <pre><span class="green">npm</span> init <span class="yellow">js-project</span> <em>[project-name]</em></pre>
+          </div>
+        </li>
+        <li>
+          <p>Answer the questions, such as your project's name and desired template.</p>
+        </li>
+        <li>
+          <p>Wait until the installation is complete and start coding!</p>
+        </li>
+      </ol>
+    </div>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"></path><polyline points="2.32 6.16 12 11 21.68 6.16"></polyline><line x1="12" y1="22.76" x2="12" y2="11"></line><line x1="7" y1="3.5" x2="17" y2="8.5"></line></svg>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>Designed and developed by Angelos Chalaris &copy; 2019<br>
+    Icons made by <a
+      href="https://twitter.com/colebemis" target="_blank">Cole Blemis</a> from <a href="https://feathericons.com/"
+      target="_blank">Feather</a>
+  </p>
+</footer>
 </body>
 </html>
