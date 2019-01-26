@@ -1,6 +1,6 @@
 {
   "name": "create-js-project",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Set up a JavaScript project by running one command.",
   "main": "index.js",
   "scripts": {
