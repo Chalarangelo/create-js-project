@@ -1,4 +1,5 @@
 {
+  "meta:description": "A basic template for projects based on React.",
   "name": "React",
   "category": "react",
   "dependencies": [

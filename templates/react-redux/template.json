@@ -1,4 +1,5 @@
 {
+  "meta:description": "A template for projects based on React and Redux.",
   "name": "React + Redux",
   "category": "react",
   "dependencies": [

@@ -289,8 +289,12 @@ h2 small {
   box-sizing: border-box;
 }
 
-ol {
+ol, ul {
   padding: 0 20px;
+}
+
+ul > li {
+  line-height: 1.4;
 }
 
 li > .two-pres {
@@ -304,6 +308,34 @@ li > .two-pres {
 
 .yellow {
   color: #FFF59D;
+}
+
+.templates {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 10% 30px 10%;
+}
+.templates > div:last-child {
+  flex-grow: 1;
+  width: 66%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.templates > div:first-child {
+  flex-grow: 1;
+  width: 33%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.templates > div:first-child > svg {
+  background: #2962FF;
+  padding: 16px;
+  border-radius: 100%;
 }
 
 footer {
@@ -320,7 +352,7 @@ footer p {
   font-size: 0.9rem;
 }
 
-footer a, footer a:link, footer a:visited {
+a, a:link, a:visited {
   text-decoration: none;
   color: #1556d6;
 }
@@ -336,10 +368,21 @@ footer a, footer a:link, footer a:visited {
   .get-started {
     padding: 10px 0 10px 0;
   }
+  .templates {
+    padding: 10px 0 10px 0;
+  }
   .get-started > div:first-child {
     width: 100%;
   }
   .get-started > div:last-child{
+    width: 100%;
+    order: -1;
+    padding-bottom: 0;
+  }
+  .templates > div:last-child {
+    width: 100%;
+  }
+  .templates > div:first-child{
     width: 100%;
     order: -1;
     padding-bottom: 0;

@@ -1,5 +1,6 @@
 {
-  "name": "Node.js Fullstack",
+  "meta:description": "A template for projects that run in the browser, powered by Node.js.",
+  "name": "Node.js Static Server",
   "category": "node",
   "devDependencies": [
     "parcel-bundler",

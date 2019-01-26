@@ -1,4 +1,5 @@
 {
+  "meta:description": "An advanced template for projects based on React, powered by Express.",
   "name": "Express + React",
   "category": "node",
   "dependencies": [

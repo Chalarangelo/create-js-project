@@ -1,5 +1,6 @@
 {
-  "name": "Node.js",
+  "meta:description": "A basic template for an HTTP server, powered by Node.js.",
+  "name": "Node.js HTTP Server",
   "category": "node",
   "devDependencies": [
     "parcel-bundler",

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/create-js-project.js",
+    "build-docs": "node ./docs_gen/genDocs.js",
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --config .eslintrc.json",
     "lint-fix": "node ./node_modules/eslint/bin/eslint . --ext .js --fix --config .eslintrc.json"
   },

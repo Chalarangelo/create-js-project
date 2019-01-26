@@ -1,4 +1,5 @@
 {
+  "meta:description": "An advanced template for projects based on React and Redux, powered by Node.js.",
   "name": "Node.js + React + Redux",
   "category": "node",
   "dependencies": [

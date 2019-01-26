@@ -1,4 +1,5 @@
 {
+  "meta:description": "A basic template for projects that need to run in the browser.",
   "name": "Browser",
   "category": "browser",
   "devDependencies": [

@@ -1,5 +1,6 @@
 {
-  "name": "Express",
+  "meta:description": "A basic template for an HTTP server, powered by Express.",
+  "name": "Express HTTP Server",
   "category": "node",
   "dependencies": [
     "express"

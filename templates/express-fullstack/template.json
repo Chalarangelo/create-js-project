@@ -1,5 +1,6 @@
 {
-  "name": "Express Fullstack",
+  "meta:description": "A template for projects that run in the browser, powered by Express.",
+  "name": "Express Static Server",
   "category": "node",
   "dependencies": [
     "express"
